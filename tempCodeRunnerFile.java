@@ -1,0 +1,1 @@
+g.drawLine(arrowX, arrowY + (arrowWidth / 2), arrowX + arrowLength, arrowY + (arrowWidth / 2)); // Horizonta
