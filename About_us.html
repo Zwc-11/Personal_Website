@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="Shortcut icon" href="Caesarzhouuu_A_golden_angel_with_a_holy_sword_suspended_in_the__3dd4459c-01d3-49e4-9455-c348b4b0e0d9-removebg-preview.png">
+        <link rel="stylesheet" href="About_us.css">
+        <!--font awesome-->
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="name-container">
+                <span class="text sec-text">CZ Trendy Shop</span>
+            </div>
+            <!-- <h2 data-text = "Caesar"class="Myname">Caesar</h2> -->
+            <nav class="navigation">
+                <a href="Homepage.html">Home</a>
+                <a href="Productpage.html">Product</a>
+                <a href="About_us.html">About Us</a>
+                <a href="Contact_page.html">Contact</a>
+                <a href="Sitemap.html">Sitemap</a>
+                <button class="btnLogin-pop" onclick="myFunction()" >Login</button>
+                <script>
+                    function myFunction(){
+                        window.location.href="login_register.html";
+                    }
+                </script>
+            </nav>
+        </header>
+        <div class="about">
+            <div class="main">
+                <img class = "About-us-img"src="About_us_img.png" alt="">
+                <div class="about-txt">
+                    <h1>About Us</h1>
+                    <h5>CZ Trendy Shop</h5>
+                    <p>At trendy stores, you'll find the latest and most stylish fashion pieces that are sure to make you stand out from the crowd. From on-trend clothing to accessories that will complete your look, these stores are the go-to destinations for anyone looking to update their wardrobe with the latest fashion trends. With a constantly evolving inventory, trendy stores offer a wide range of options to cater to different tastes and preferences. Whether you're looking for classic and timeless pieces or bold and daring designs, you're sure to find something that speaks to your personal style. So why settle for boring and outdated fashion when you can shop at trendy stores and be the envy of all your friends? </p>
+                    <button class = "aboutusbutton" type="button" onclick="myFunction()">Join Us!</button>
+                    <script>
+                        function myFunction(){
+                            window.location.href="login_register.html";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            const sr = ScrollReveal({
+                            origin: 'bottom',
+                            distance: '60px',
+                            duration: 2500,
+            })
+            sr.reveal('.about-txt', {distance: '120px', delay: 400})
+            sr.reveal('.aboutusbutton', {delay: 1000})
+            sr.reveal('.About-us-img', {delay: 1200})
+        </script>
+
+
+
+<footer>
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col" id="company">
+                        <img src="Caesarzhouuu_A_golden_angel_with_a_holy_sword_suspended_in_the__3dd4459c-01d3-49e4-9455-c348b4b0e0d9-removebg-preview.png" class="logo">
+                        <p>
+                            CZ Trendy Shop
+                        </p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/groups/582238202880817/"><i class="fab fa-facebook"></i></a>
+                            <a href="caesar_zwc_qr.png"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/watch?v=n7g6T6HNymo"><i class="fab fa-youtube"></i></a>
+                            <a href="https://twitter.com/huntkyle"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col" id="services">
+                        <h3>Service</h3>
+                        <div class="links">
+                            <a href="#">Join us</a>
+                            <a href="#">Sell on here</a>
+                            <a href="#">Gift Cards</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                            <a href="Homepage.html">Home</a>
+                            <a href="Productpage.html">Product</a>
+                            <a href="About_us.html">About Us</a>
+                            <a href="Contact_page.html">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footer-col" id="contact">
+                        <h3>Contact</h3>
+                        <div class="contact-details">
+                            <i class="fafa-location">
+                                <p>3000 Don Mills Rd E, North York, ON M2J 3B6 <br> North York, Ontario, CANADA</p>
+                            </i>
+                        </div>
+                        <div class="contact-details">
+                            <i class="fafa-phone">
+                                <p>416-395-3250</p>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-row">
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Email here..." class="input" required>
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    
+</html>

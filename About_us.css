@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Poppins:wght@300&family=Spline+Sans+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    backdrop-filter: contrast(110%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+
+.name-container{
+    overflow: hidden;
+}
+
+.name-container .text{
+    position: relative;
+    color: #4070f4;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.name-container .text.first-text{
+    color: rgba(82, 255, 122, 1);
+}
+.name-container .text.sec-text{
+    animation: animateColor 1.5s linear infinite, 
+    animateSide 1.5s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.text.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    background: #000;
+    border-left: 2px solid #4070f4;
+    animation: textanimate 4s steps(12) infinite;
+
+}
+
+@keyframes textanimate{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(255, 0, 51);
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 40px;
+    
+    
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 153, 204);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnLogin-pop{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s; 
+}
+.navigation .btnLogin-pop:hover{
+    background: #fff;
+    color: #162938;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 2rem;
+    background-color: black;
+}
+
+
+.about img{
+    height: auto;
+    width: auto;
+}
+
+.about-txt{
+    width: 550px;
+}
+
+.main{
+    width: 1130%;
+    max-width: 95%;
+    margin: 10rem 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-txt h1{
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.about-txt h5{
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-txt p{
+    color: #fcfc;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+button{
+    background: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background: transparent;
+    background: black;
+    color: white;
+    border: 2px solid #f9004d;
+}
+
+footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    padding: 3rem 1rem;
+}
+.footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-col{
+    min-width: 250px;
+    color: #f2f2f2;
+    font-family: poppins;
+    padding: 0 2rem;
+}
+.footer-col .logo{
+    width: 100px;
+    margin-bottom: 25px;
+}
+.footer-col .h3{
+    color: #ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.footer-col h3::after{
+    content: '';
+    height: 3px;
+    width: 50px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3.s ease;
+}
+
+.footer-col h3:hover::after{
+    width: 30px;
+}
+.footer-col .social a i{
+    color: wheat;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+
+.footer-col .social a i:hover{
+    transform: scale(1.5);
+    filter: grayscale(25);
+}
+.footer-col .links a{
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition:  0.3s ease;
+}
+
+.footer-col .links a::before{
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #ff014fff;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.footer-col .links a:hover::before{
+    opacity: 1;
+}
+.footer-col .links a:hover{
+    transform: translateX(-8px);
+    color: #ff014fff;
+}
+.footer-col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.footer-col .contact-details i{
+    margin-right: 15px;
+}
+.footer-row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.footer-row .form input{
+    background-color: white;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form button{
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #ff014fff;
+}
+
+@media (max-width: 900px) {
+    .footer-row{
+        flex-direction: column;
+    }
+    .footer-col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-row{
+        flex-direction: column;
+    }
+    .footer-col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
